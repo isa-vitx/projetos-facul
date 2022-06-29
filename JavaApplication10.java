@@ -16,7 +16,7 @@ public class JavaApplication10 {
         sall = sal[1] + sal[2] + sal[0];
         
         double medsal;
-        medsal = sall/5;
+        medsal = sall/3;
         
         System.out.printf("\nA média salarial dos cidadãos é: " + "%.2f %n", medsal);
         
