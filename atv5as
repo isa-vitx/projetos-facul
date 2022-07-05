@@ -1,0 +1,154 @@
+package javaapplication12;
+import java.util.*;
+public class JavaApplication12 {
+    
+    public static void main(String[] args) {
+
+
+        double renda[] = new double[3];
+        int salmin = 1200;
+        char depen[] = new char[3];
+        int qdp[] = new int[3];
+     
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Digite sua renda mensal");
+        renda[0] = entrada.nextDouble();
+        System.out.println("Tem algum dependente?");
+        depen[0] = entrada.next().charAt(0);
+        if (depen[0] == 's' || depen[0] == 'S') {
+            System.out.println("Quantos?");
+            qdp[0] = entrada.nextInt();
+        }
+        if(renda[0] <= salmin*2) {
+            System.out.println("Você está isento");
+        }
+        if(renda[0] >= salmin*2 && renda[0] <= salmin*3) {
+            if (depen[0] == 's' || depen[0] == 'S') {
+                System.out.println("Está isento");
+            }
+            else {
+            System.out.println("Pague " + renda[0]*0.05);
+            }
+        }
+        if(renda[0] >= salmin*3 && renda[0] <= salmin*5) {
+            if (depen[0] == 's' || depen[0] == 'S') {
+                System.out.println("Pague " + ((renda[0]*0.10) - (renda[0]*0.5*qdp[0])));
+            }
+            else {
+            System.out.println("Pague " + renda[0]*0.10);
+            }
+        }
+        if(renda[0] >= salmin*5 && renda[0] <= salmin*7) {
+            if (depen[0] == 's' || depen[0] == 'S') {
+                System.out.println("Pague " + ((renda[0]*0.15) - (renda[0]*0.5*qdp[0])));
+            }
+            else {
+            System.out.println("Pague " + renda[0]*0.15);
+            }
+        }
+        if(renda[0] > salmin*7) {
+            if (depen[0] == 's' || depen[0] == 'S') {
+                System.out.println("Pague " + ((renda[0]*0.20) - (renda[0]*0.5*qdp[0])));
+            }
+            else {
+            System.out.println("Pague " + renda[0]*0.20);
+            }
+        }
+        
+        //
+        
+        System.out.println("\nDigite sua renda mensal");
+                renda[1] = entrada.nextDouble();
+        System.out.println("Tem algum dependente?");
+        depen[1] = entrada.next().charAt(0);
+        if (depen[1] == 's' || depen[1] == 'S') {
+            System.out.println("Quantos?");
+            qdp[1] = entrada.nextInt();
+        }
+        if(renda[1] <= salmin*2) {
+            System.out.println("Você está isento");
+        }
+        
+        if(renda[1] >= salmin*2 && renda[1] <= salmin*3) {
+            if (depen[1] == 's' || depen[1] == 'S') {
+                System.out.println("Está isento");
+            }
+            else {
+            System.out.println("Pague " + renda[1]*0.05);
+            }
+        }
+        if(renda[1] >= salmin*3 && renda[1] <= salmin*5) {
+            if (depen[1] == 's' || depen[1] == 'S') {
+               System.out.println("Pague " + ((renda[1]*0.10) - (renda[1]*0.5*qdp[1])));
+            }
+            else {
+            System.out.println("Pague " + renda[1]*0.10);
+            }
+        }
+        if(renda[1] >= salmin*5 && renda[1] <= salmin*7) {
+            if (depen[1] == 's' || depen[1] == 'S') {
+                System.out.println("Pague " + ((renda[1]*0.15) - (renda[1]*0.5*qdp[1])));
+            }
+            else {
+            System.out.println("Pague " + renda[1]*0.15);
+            }
+        }
+        if(renda[1] > salmin*7) {
+            if (depen[1] == 's' || depen[1] == 'S') {
+                System.out.println("Pague " + ((renda[1]*0.20) - (renda[1]*0.5*qdp[1])));
+            }
+            else {
+            System.out.println("Pague " + renda[1]*0.20);
+            }
+        }
+        
+        //
+        
+        System.out.println("\nDigite sua renda mensal");
+                renda[2] = entrada.nextDouble();
+        System.out.println("Tem algum dependente?");
+        depen[2] = entrada.next().charAt(0);                
+        if (depen[2] == 's' || depen[2] == 'S') {
+            System.out.println("Quantos?");
+            qdp[2] = entrada.nextInt();
+        }
+       if(renda[2] <= salmin*2) {
+            System.out.println("Você está isento");
+        }
+        if(renda[2] >= salmin*2 && renda[2] <= salmin*3) {
+            if (depen[2] == 's' || depen[2] == 'S') {
+                System.out.println("Está isento");
+            }
+            else {
+            System.out.println("Pague " + renda[2]*0.05);
+            }
+        }
+        if(renda[2] >= salmin*3 && renda[2] <= salmin*5) {
+            if (depen[2] == 's' || depen[2] == 'S') {
+                System.out.println("Pague " + ((renda[2]*0.10) - (renda[2]*0.5*qdp[2])));
+            }
+            else {
+            System.out.println("Pague " + renda[2]*0.10);
+            }
+       }
+        if(renda[2] >= salmin*5 && renda[2] <= salmin*7) {
+            if (depen[2] == 's' || depen[2] == 'S') {
+                System.out.println("Pague " + ((renda[2]*0.15) - (renda[2]*0.5*qdp[2])));
+            }
+            else {
+            System.out.println("Pague " + renda[2]*0.15);
+            }
+        }
+        if(renda[2] > salmin*7) {
+            if (depen[2] == 's' || depen[2] == 'S') {
+                System.out.println("Pague " + ((renda[2]*0.20) - (renda[2]*0.5*qdp[2])));
+            }
+            else {
+            System.out.println("Pague " + renda[2]*0.20);
+            }
+        }
+    }
+}
+
+
+ 
